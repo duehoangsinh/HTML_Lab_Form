@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Another simple example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      table tr td,
+      table tr th {
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="form_dang_ki" action="/xu_ly_du_lieu" method="post">
+      <div>
+        <label>Tên</label>
+        <input name="ten" placeholder="xin nhap ten" value="" type="text" />
+      </div>
+
+      <div>
+        <p>Email</p>
+        <input
+          name="email"
+          placeholder="xin nhap email"
+          value=""
+          type="email"
+        />
+      </div>
+      <div>
+        <p>Mat khau</p>
+        <input
+          name="matkhau"
+          placeholder="xin nhap mat khau"
+          value=""
+          type="password"
+        />
+      </div>
+
+      <div>
+        <p>Gioi tinh</p>
+        <input name="gioitinh" value="Nam" type="radio" /> Nam
+        <input name="gioitinh" value="Nu" type="radio" /> nu
+        <input name="gioitinh" value="NamNu" type="radio" /> Gioi tinh thu 3
+      </div>
+
+      <div>
+        <p>Sinh nhat</p>
+        <input name="sinhnhat" value="" type="date" />
+      </div>
+      <div>
+        <p>So thich</p>
+        <input name="sothich" value="dabong" type="checkbox" /> da bong
+        <input name="sothich" value="nghenhac" type="checkbox" /> nghe nhac
+      </div>
+
+      <div>
+        <p>Thanh pho</p>
+        <select name="thanhpho">
+          <option value="Hanoi"> Ha Noi</option>
+          <option value="HCMs"> TPHCM</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="submit" value="dang ki" />
+        <input type="reset" value="Reset form" />
+      </div>
+    </form>
+  </body>
+</html>
